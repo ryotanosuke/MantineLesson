@@ -6,7 +6,7 @@ import { Settings } from 'tabler-icons-react'
 import { supabase } from '../utils/supabase'
 import { Layout } from './Layout'
 
-const DashBoard = () => {
+export const DashBoard = () => {
   const signOut = () => {
     supabase.auth.signOut()
   }
@@ -35,5 +35,3 @@ const DashBoard = () => {
     </Layout>
   )
 }
-
-export default DashBoard
